@@ -28,7 +28,7 @@ const RestaurantReviews = props => {
 								</Link>
 							</span>
 						</h4>
-						<p className="card-text pt-2">{r.content}</p>
+						<p className="card-text pt-2" dangerouslySetInnerHTML={{ __html: r.content }} />
 					</div>
 				</div>
 			))}
