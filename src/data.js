@@ -31,7 +31,7 @@ let reviews = [
 		rating: 3,
 		title: 'Too saucy!',
 		content:
-			'The quality of the food is poor. Too much sauce on everything. I would not return to this place. Price is way to high for what you get.',
+			'The quality of the food is poor. Too much sauce on everything. I would not return to this place. Price is way too high for what you get.',
 		restaurant_id: 0,
 	},
 	{
@@ -76,7 +76,7 @@ let reviews = [
 		id: 7,
 		rating: 4,
 		title: 'Go somewhere else',
-		content: 'Bad and slow service. The quality of the food is really low. Way to expensive for what you get.',
+		content: 'Bad and slow service. The quality of the food is really low. Way too expensive for what you get.',
 		restaurant_id: 2,
 	},
 	{
