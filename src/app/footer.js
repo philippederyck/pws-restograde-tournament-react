@@ -2,6 +2,8 @@ import React from 'react';
 
 const Footer = () => {
 	return (
+		<script type="text/javascript" src="dist/purify.min.js"></script>
+		
 		<footer className="page-footer font-small bg-primary pt-2 mt-4">
 			<div className="container-fluid text-center text-md-left">
 				<div className="advertisement-row row m-3">
