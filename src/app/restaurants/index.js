@@ -14,7 +14,7 @@ const RestaurantsList = () => {
 							<img
 								className="card-img-top"
 								alt={r.name}
-								src={`https://raw.githubusercontent.com/philippederyck/pws-tournament-restograde-angular/master/src/assets/${r.image}`}
+								src={`https://raw.githubusercontent.com/philippederyck/pws-tournament-restograde-react/master/src/assets/${r.image}`}
 							/>
 							<Link to={`/restaurants/${r.id}/reviews`}>
 								<div className="mask rgba-white-slight"></div>
