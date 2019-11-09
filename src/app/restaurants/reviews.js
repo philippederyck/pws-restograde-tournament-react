@@ -1,6 +1,7 @@
 import React from 'react';
 import DataService from '../../data.service';
 import { Link } from 'react-router-dom';
+import ReactHtmlParser from 'react-html-parser';
 
 const createDOMPurify = require('dompurify');
 const DOMPurify = createDOMPurify(window);
@@ -32,7 +33,7 @@ const RestaurantReviews = props => {
 								</Link>
 							</span>
 						</h4>
-						<p className="card-text pt-2" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(r.content) }} />
+						<p className="card-text pt-2">{ ReactHtmlParser(r.content) }</p>
 					</div>
 				</div>
 			))}

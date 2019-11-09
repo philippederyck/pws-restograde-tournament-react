@@ -2,4 +2,4 @@
 
 ## Changes in this branch
 
-* Enabled DOMPurify
+* Added react-html-parser
