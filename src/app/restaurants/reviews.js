@@ -29,6 +29,11 @@ const RestaurantReviews = props => {
 							</span>
 						</h4>
 						<p className="card-text pt-2">{r.content}</p>
+						{ r.imageurl.length > 0 &&
+							<p>
+								<a href={r.imageurl}>View images</a>
+							</p>
+						}
 					</div>
 				</div>
 			))}

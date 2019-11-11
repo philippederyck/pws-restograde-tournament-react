@@ -13,16 +13,16 @@ const DataService = {
 	getReviewById: id => {
 		return reviews.find(r => r.id == id); // eslint-disable-line eqeqeq
 	},
-	createReview: ({ rating, title, content, restaurant_id }) => {
+	createReview: ({ rating, title, content, imageurl, restaurant_id }) => {
 		let id = Math.max(...reviews.map(r => r.id)) + 1;
-		let review = { id, rating, title, content, restaurant_id };
+		let review = { id, rating, title, content, imageurl, restaurant_id };
 		reviews.push(review);
 
 		return review;
 	},
-	updateReview: ({ id, rating, title, content, restaurant_id }) => {
+	updateReview: ({ id, rating, title, content, imageurl, restaurant_id }) => {
 		let review = DataService.getReviewById(id);
-		Object.assign(review, { rating, title, content, restaurant_id });
+		Object.assign(review, { rating, title, content, imageurl, restaurant_id });
 
 		return review;
 	},

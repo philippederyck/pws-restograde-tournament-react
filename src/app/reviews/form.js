@@ -51,6 +51,14 @@ const ReviewForm = props => {
 						onChange={handleChange}
 					/>
 
+					<MDBInput
+						type="url"
+						label="A link to images of your experiences"
+						name="imageurl"
+						value={data.imageurl}
+						onChange={handleChange}
+					/>
+
 					<MDBBtn type="submit" color="primary">
 						Submit Review
 					</MDBBtn>

@@ -32,6 +32,7 @@ let reviews = [
 		title: 'Too saucy!',
 		content:
 			'The quality of the food is poor. Too much sauce on everything. I would not return to this place. Price is way too high for what you get.',
+		imageurl: 'https://unsplash.com/photos/jivmv9hE6bM', 		
 		restaurant_id: 0,
 	},
 	{
@@ -40,6 +41,7 @@ let reviews = [
 		title: 'Dual standards',
 		content:
 			'As locals we can say that this was our last visit. We were surprised by the downfall to his place. It used to be a very good price/quality, but now we are really disappointed. I ordered the same starter as my husband, but got half the portion that he got.  After we informed the staff, the owner came to yell at us. I have never been more humiliated in my life. ',
+		imageurl: '', 		
 		restaurant_id: 0,
 	},
 	{
@@ -48,6 +50,7 @@ let reviews = [
 		title: 'Just so so',
 		content:
 			'We were well received, the staff was OK, but we didn’t like the food. Not spectacular, but also not bad.',
+		imageurl: 'https://unsplash.com/photos/8pUjhBm4cLw', 		
 		restaurant_id: 0,
 	},
 	{
@@ -56,6 +59,7 @@ let reviews = [
 		title: 'The place to be',
 		content:
 			'The Restaurant is right in the center of town. It has top food en it’s a very nice place with a friendly and professional staff',
+		imageurl: 'https://unsplash.com/photos/-YHSwy6uqvk', 		
 		restaurant_id: 1,
 	},
 	{
@@ -63,6 +67,7 @@ let reviews = [
 		rating: 8,
 		title: 'Friendly and delicious!',
 		content: 'An incredibly friendly hostess. Nice atmosphere, a great place to eat. We will be coming back',
+		imageurl: '', 		
 		restaurant_id: 1,
 	},
 	{
@@ -70,6 +75,7 @@ let reviews = [
 		rating: 7,
 		title: 'A bit expensive, bot not too bad',
 		content: 'The service was slow. The food was OK, but the portions where to small for what you pay',
+		imageurl: '', 		
 		restaurant_id: 1,
 	},
 	{
@@ -77,6 +83,7 @@ let reviews = [
 		rating: 4,
 		title: 'Go somewhere else',
 		content: 'Bad and slow service. The quality of the food is really low. Way too expensive for what you get.',
+		imageurl: '', 		
 		restaurant_id: 2,
 	},
 	{
@@ -85,6 +92,7 @@ let reviews = [
 		title: 'Great parking, crappy restaurant',
 		content:
 			'Fine location, lots of parking. But those are the only good things. We had the suggestion menu. The meat wasn’t eatable, you had to look for the salad with a magnifier. There were exactly 3 pieces of fish in the stew. No we won’t be coming back.',
+		imageurl: '', 		
 		restaurant_id: 2,
 	},
 	{
@@ -93,6 +101,7 @@ let reviews = [
 		title: 'Kitchen nightmares!',
 		content:
 			"In contrast to the pleasant setting, the quality of the dishes was substandard. A steak that is heavily overcooked, a fish pan that looks more like a plate of soup, mashed potatoes from a pack and staff that comes to ask if everything is alright but when we said 'no' did not respond. I dare to say that I have never eaten something so bad.",
+		imageurl: '', 		
 		restaurant_id: 2,
 	},
 ];
