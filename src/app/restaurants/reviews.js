@@ -1,6 +1,7 @@
 import React from 'react';
 import DataService from '../../data.service';
 import { Link } from 'react-router-dom';
+import parseURL from 'url-parse';
 
 const RestaurantReviews = props => {
 	let { match } = props;
@@ -10,14 +11,14 @@ const RestaurantReviews = props => {
 	let restaurant = DataService.getRestaurantById(id);
 	let reviews = DataService.getReviewsByRestaurantId(id);
 
-	function isSafe(url) {
-		// Remove whitespace
-		url = url.trim();
+	function isSafe(textUrl) {
+		let url = parseURL(textUrl, {});
 
-		// Filter out dangerous URL patterns
-		if(url.startsWith('javascript:')) return false;
-
-		return true;
+		// Explicitly allow safe protocols
+		if(url.protocol === 'http:') return true;
+		if(url.protocol === 'https:') return true;
+		
+		return false;
 	}
 
 	return (
