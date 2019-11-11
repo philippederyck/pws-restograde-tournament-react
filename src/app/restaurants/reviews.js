@@ -10,6 +10,16 @@ const RestaurantReviews = props => {
 	let restaurant = DataService.getRestaurantById(id);
 	let reviews = DataService.getReviewsByRestaurantId(id);
 
+	function isSafe(url) {
+		// Remove whitespace
+		url = url.trim();
+
+		// Filter out dangerous URL patterns
+		if(url.startsWith('javascript:')) return false;
+
+		return true;
+	}
+
 	return (
 		<div className="row justify-content-center mt-5">
 			<div className="col-12 text-center">
@@ -29,7 +39,7 @@ const RestaurantReviews = props => {
 							</span>
 						</h4>
 						<p className="card-text pt-2">{r.content}</p>
-						{ r.imageurl.length > 0 &&
+						{ r.imageurl.length > 0 && isSafe(r.imageurl) && 
 							<p>
 								<a href={r.imageurl}>View images</a>
 							</p>

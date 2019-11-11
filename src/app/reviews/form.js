@@ -52,7 +52,7 @@ const ReviewForm = props => {
 					/>
 
 					<MDBInput
-						type="url"
+						type="text"
 						label="A link to images of your experiences"
 						name="imageurl"
 						value={data.imageurl}
